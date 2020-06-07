@@ -18,14 +18,12 @@
 <main>
 <h2>Practice</h2>
 <pre>
-<?php
-//$i = 1;
-//while ($i <= 365){
-    //print($i."\n"); 
-    //$i = $i + 1;  
-//}
-for ($i=1;$i<=365;$i++){
-    print($i."\n");
+<?php 
+$success = file_put_contents('../../news_data/news.txt','2018-06-01 ホームページをリニューアルしました');
+if ($success){
+    print('ファイルへの書き込みが完了しました');
+}else{
+    print('書き込みに失敗しました。フォルダの権限などを確認してください。');
 }
 ?>
 </pre>

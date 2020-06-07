@@ -19,14 +19,8 @@
 <h2>Practice</h2>
 <pre>
 <?php
-//$i = 1;
-//while ($i <= 365){
-    //print($i."\n"); 
-    //$i = $i + 1;  
-//}
-for ($i=1;$i<=365;$i++){
-    print($i."\n");
-}
+$date = sprintf('%04d年 %02d月 %02d日',2018,11,5);
+print($date);
 ?>
 </pre>
 </main>

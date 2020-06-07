@@ -18,16 +18,11 @@
 <main>
 <h2>Practice</h2>
 <pre>
-<?php
-//$i = 1;
-//while ($i <= 365){
-    //print($i."\n"); 
-    //$i = $i + 1;  
-//}
-for ($i=1;$i<=365;$i++){
-    print($i."\n");
-}
-?>
+3,000円のものから、100円値引きした場合は、<?php print
+(floor(100 / 3000 * 100));
+?>%引きです。
+<?php print(ceil(100 / 3000 * 100)); ?>
+<?php print(round(1.457,3)); ?>
 </pre>
 </main>
 </body>    

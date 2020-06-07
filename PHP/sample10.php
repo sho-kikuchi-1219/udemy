@@ -19,13 +19,14 @@
 <h2>Practice</h2>
 <pre>
 <?php
-//$i = 1;
-//while ($i <= 365){
-    //print($i."\n"); 
-    //$i = $i + 1;  
+//if(date('G')<15){
+    print('※現在受付時間外です');
+//}else{
+//    print('ようこそ');
 //}
-for ($i=1;$i<=365;$i++){
-    print($i."\n");
+$x = 0;
+if(!$x){
+    print('xは0です');
 }
 ?>
 </pre>

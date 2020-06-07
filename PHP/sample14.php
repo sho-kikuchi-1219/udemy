@@ -19,14 +19,10 @@
 <h2>Practice</h2>
 <pre>
 <?php
-//$i = 1;
-//while ($i <= 365){
-    //print($i."\n"); 
-    //$i = $i + 1;  
-//}
-for ($i=1;$i<=365;$i++){
-    print($i."\n");
-}
+$news = file_get_contents('../../news_data/news.txt');
+$news = "2018-06-04 ニュースを追加しました\n".$news;
+file_put_contents('../../new_data/news_txt',$news);
+print($news);
 ?>
 </pre>
 </main>

@@ -15,18 +15,15 @@
 <h1 class="font-weight-normal">PHP</h1>    
 </header>
 
-<main>
+<main> 
 <h2>Practice</h2>
 <pre>
 <?php
-//$i = 1;
-//while ($i <= 365){
-    //print($i."\n"); 
-    //$i = $i + 1;  
-//}
-for ($i=1;$i<=365;$i++){
-    print($i."\n");
-}
+for ($i=1;$i<=365;$i++):
+    $date = strtotime('+'.$i.'day');
+    print (date('n/j(D)',$date));
+    print "\n";
+endfor;
 ?>
 </pre>
 </main>
